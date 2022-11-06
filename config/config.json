@@ -1,6 +1,6 @@
 {
   "development": {
-    "url": "postgres://gxdnuunn:B6FSOREDOPpVoObsHgrHrQTvFfkPskmQ@lucky.db.elephantsql.com/gxdnuunn",
+    "url": "postgres://jtbfdcoe:kPkuT2aMsud6OSRi4FNnzhy7Ob9AUkts@lucky.db.elephantsql.com/jtbfdcoe",
     "dialect": "postgres"
   },
   "test": {

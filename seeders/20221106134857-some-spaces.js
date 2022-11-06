@@ -22,7 +22,7 @@ module.exports = {
           color: "#EDEDED",
           createdAt: new Date(),
           updatedAt: new Date(),
-          userId: 2
+          userId: 2,
 
         },
       ],
