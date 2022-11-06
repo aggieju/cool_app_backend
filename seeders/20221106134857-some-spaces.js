@@ -4,6 +4,7 @@ const User = require("../models").user;
 module.exports = {
   up: async (queryInterface, Sequelize) => {
 
+
     await queryInterface.bulkInsert(
       "spaces",
       [
@@ -12,6 +13,7 @@ module.exports = {
           description: "A tell all tale",
           createdAt: new Date(),
           updatedAt: new Date(),
+          userId: 1,
 
         },
         {
@@ -20,6 +22,8 @@ module.exports = {
           color: "#EDEDED",
           createdAt: new Date(),
           updatedAt: new Date(),
+          userId: 2
+
         },
       ],
       {}
@@ -30,5 +34,3 @@ module.exports = {
     await queryInterface.bulkDelete("spaces", null, {});
   },
 };
-
-
