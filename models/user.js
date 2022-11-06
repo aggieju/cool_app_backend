@@ -10,14 +10,14 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      // define association here
+      //    user.hasOne(models.space);
     }
   }
   user.init({
-    name: { type: DataTypes.STRING, unique: true, allowNull: false},
-    email: { type: DataTypes.STRING, allowNull: false},
+    name: { type: DataTypes.STRING, unique: true, allowNull: false },
+    email: { type: DataTypes.STRING, allowNull: false },
     phone: { type: DataTypes.INTEGER },
-    password: { type: DataTypes.STRING, allowNull: false}
+    password: { type: DataTypes.STRING, allowNull: false }
   }, {
     sequelize,
     modelName: 'user',
