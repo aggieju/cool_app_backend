@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       space.belongsTo(models.user);
-      //   space.hasMany(models.story);
+      space.hasMany(models.story);
     }
   }
   space.init({

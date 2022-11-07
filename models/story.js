@@ -10,13 +10,15 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      //     story.belongsTo(models.space);
+      story.belongsTo(models.space);
     }
   }
   story.init({
     name: DataTypes.STRING,
     content: DataTypes.TEXT,
-    imageUrl: DataTypes.STRING
+    imageUrl: DataTypes.STRING,
+    spaceId: { type: DataTypes.STRING, allowNull: false },
+
   }, {
     sequelize,
     modelName: 'story',
