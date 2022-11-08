@@ -17,7 +17,6 @@ module.exports = (sequelize, DataTypes) => {
     name: DataTypes.STRING,
     content: DataTypes.TEXT,
     imageUrl: DataTypes.STRING,
-    spaceId: { type: DataTypes.STRING, allowNull: false },
 
   }, {
     sequelize,
